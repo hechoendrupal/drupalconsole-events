@@ -1,0 +1,16 @@
+
+events.event_controller_page:
+  path: 'events'
+  defaults:
+    _controller: '\Drupal\events\Controller\EventController::page'
+    _title: 'Events'
+  requirements:
+    _permission: 'access content'
+
+events.event_controller_api:
+  path: 'events.json'
+  defaults:
+    _controller: '\Drupal\events\Controller\EventController::api'
+    _title: 'Events'
+  requirements:
+    _permission: 'access content'

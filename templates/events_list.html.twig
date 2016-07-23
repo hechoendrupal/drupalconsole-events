@@ -1,0 +1,22 @@
+<div id="map" data-role="page">
+  <div data-role="content">
+    <div id="map_canvas" style="height:360px; width:100%"></div>
+  </div>
+</div>
+
+<div id="events">
+  <table cellspacing="0" cellpadding="0">
+    <tr>
+      <th>Event</th><th>Date(s)</th><th>Attending</th>
+    </tr>
+    {% for event in events  %}
+      <tr>
+        <td><a href=" {{ event.link }}" target="_blank">{{ event.title }}</a></td>
+        <td>{{ event.details }}</td>
+        <td>
+          {{ event.attendees|join(', ') }}
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>

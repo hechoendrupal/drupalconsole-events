@@ -1,0 +1,8 @@
+{
+  "name": "drupal/events",
+  "type": "drupal-module",
+  "description": "Handle DrupalConsole events",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "minimum-stability": "dev"
+}

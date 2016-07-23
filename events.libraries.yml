@@ -1,0 +1,12 @@
+maps-js:
+  js:
+    https://maps.googleapis.com/maps/api/js?v=3&sensor=false:
+      type: external
+      minified: true
+      attributes:
+        async: false
+maps-my:
+  js:
+    js/map.js: {}
+  dependencies:
+    - events/maps-js
